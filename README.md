@@ -2,9 +2,8 @@
 
 Требуются
 
-javac 1.8.0_201
-openjdk version "1.8.0_201"
-Apache Maven 3.5
+1) jdk-11.0.13
+2) apache-maven-3.8.6
 
 1) Клонировать репозиторий
 2) Выполнить mvn package
