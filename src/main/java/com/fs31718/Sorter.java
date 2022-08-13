@@ -1,3 +1,5 @@
+package com.fs31718;
+
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.BufferedWriter;
@@ -24,10 +26,10 @@ public class Sorter {
             this.isStrings = isStrings;
             inputStreamArray = new FileInputStream[inputFileNames.size()];
             scanners = new Scanner[inputFileNames.size()];
-            writer = new BufferedWriter(new FileWriter("./output/" + outputFileName));
+            writer = new BufferedWriter(new FileWriter("../output/" + outputFileName));
 
             for (int i = 0; i < inputFileNames.size(); i++) {
-                inputStreamArray[i] = new FileInputStream("./input/" + inputFileNames.get(i));
+                inputStreamArray[i] = new FileInputStream("../input/" + inputFileNames.get(i));
                 scanners[i] = new Scanner(inputStreamArray[i], StandardCharsets.UTF_8);
             }
         } catch (IOException e) {

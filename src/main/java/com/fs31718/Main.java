@@ -1,3 +1,5 @@
+package com.fs31718;
+
 public class Main {
     public static void main(String[] args) {
         CommandLineReader cli = new CommandLineReader(args);
@@ -7,6 +9,6 @@ public class Main {
                 cli.isAscending, cli.isStrings);
         sorter.sort();
 
-        System.out.println("Сортировка завершена. Информацию смотри в файле logger.log в корневой папке");
+        System.out.println("Сортировка завершена.");
     }
 }
